@@ -1,0 +1,8 @@
+:root {
+    --red: #f05d5f;
+    --grey:#EEEEEE;
+}
+body {
+    font:300 16px sans-serif;
+    background: var(--grey);
+}
