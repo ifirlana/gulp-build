@@ -33,11 +33,18 @@ gulp.task("scripts", function () {
 });
 
 // watch
-gulp.task("watch", function () {
-    gulp.watch("app/css/*.css", "styles");
-    gulp.watch("app/js/*.js", "scripts");
-    gulp.watch("app/img/*", "images");
-});
+// gulp.task("watch", function () {
+//     gulp.watch("app/css/*.css", "styles");
+//     gulp.watch("app/js/*.js", "scripts");
+//     gulp.watch("app/img/*", "images");
+// });
 
 // default
-gulp.task("default", gulp.parallel("styles", "scripts", "images", "watch"));
+// gulp.task("default", gulp.parallel("styles", "scripts", "images", "watch"));
+// gulp.task('watch', function() {
+//     gulp.watch('app/css/*.css', ['styles', browsersync.reload]);
+//     gulp.watch('app/js/*.js', ['scripts', browsersync.reload]);
+//     gulp.watch('app/img/*', ['images', browsersync.reload]);
+// });
+
+gulp.task('default', ['styles', 'scripts', 'images']);

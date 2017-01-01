@@ -1,0 +1,9 @@
+body {
+  font: 300 16px sans-serif;
+  background: #EEEEEE;
+}
+
+#header {
+  padding: 2em;
+  background: #f05d5f;
+}
